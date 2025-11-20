@@ -21,27 +21,26 @@ MAX_CHARS_PER_LINE = None   # None = tidak dibatasi
 # ----------------------------
 
 UA_POOL = [
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/125.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/123.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/122.0.0.0 Safari/537.36",
-    
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) ",
-    "AppleWebKit/537.36 (KHTML, like Gecko) ",
-    "Chrome/131.0.6770.85 Safari/537.36 Brave/1.68.120",
+    # --- Windows (Paling Disarankan / High Trust) ---
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0", # Versi ESR (Extended Support)
 
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) ",
-    "AppleWebKit/537.36 (KHTML, like Gecko) ",
-    "Chrome/130.0.6700.62 Safari/537.36 Brave/1.67.98",
-    
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) ",
-    "AppleWebKit/537.36 (KHTML, like Gecko) ",
-    "Chrome/131.0.0.0 Safari/537.36 ",
-    "(Not:A-Brand; Brand:Chromium; Version:131.0.0.0)",
+    # --- macOS (Sangat Efektif untuk High Trust Score) ---
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14.7; rv:135.0) Gecko/20100101 Firefox/135.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 14.7; rv:134.0) Gecko/20100101 Firefox/134.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 13.6; rv:133.0) Gecko/20100101 Firefox/133.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:132.0) Gecko/20100101 Firefox/132.0",
 
-    "Mozilla/5.0 (X11; Linux x86_64) ",
-    "AppleWebKit/537.36 (KHTML, like Gecko) ",
-    "Chrome/129.0.0.0 Safari/537.36 ",
-    "(Not:A-Brand; Brand:Google Chrome; Version:129.0.0.0)"
+    # --- Linux (Gunakan dengan hati-hati, valid tapi niche) ---
+    "Mozilla/5.0 (X11; Linux x86_64; rv:135.0) Gecko/20100101 Firefox/135.0",
+    "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:134.0) Gecko/20100101 Firefox/134.0",
+    "Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:133.0) Gecko/20100101 Firefox/133.0",
+    "Mozilla/5.0 (X11; Linux x86_64; rv:130.0) Gecko/20100101 Firefox/130.0"
 ]
 
 # minimal domain extractors (pakai extractor Anda)
